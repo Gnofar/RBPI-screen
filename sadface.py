@@ -7,16 +7,11 @@ with open('sadface.txt') as f:
         for ch in line:
             if ch == "b":
                 print "\033[31;47m"
+            elif ch== ":":
+                print "\033[31;45m"
+            else
+                print "\033[31;46"
 
-
-with open('sadface.txt') as f:
-    for line in f:
-        print line
-        
 #with open('sadface.txt') as f:
-#  while True:
-#    c = f.read(1)
-#    if not c:
-#      print "End of file"
-#      break
-#    print "Read a character:", c
+#    for line in f:
+#        print line
