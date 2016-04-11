@@ -35,4 +35,7 @@ int main(){
             cout<<endl;
         }
     }
+    c=15;
+    SetConsoleTextAttribute(hConsole, c);
+    return 0;
 }
