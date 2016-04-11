@@ -6,8 +6,8 @@ with open('sadface.txt') as f:
     if not line:
       print("End of file")
       break
-    newline = line.replace("b","\033[39;49m ") #default
-    newline = newline.replace(":","\033[33;43m ") #yellow
-    newline = newline.replace("w","\033[97;107m ") #white
+    newline = line.replace("b","\033[39;49m ")
+    newline = newline.replace(":","\033[33;43m ")
+    newline = newline.replace("w","\033[97;107m ")
     
     print(newline, end="")
