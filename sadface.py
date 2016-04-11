@@ -9,8 +9,9 @@ with open('sadface.txt') as f:
                 print "\033[31;47m"
             elif ch== ":":
                 print "\033[31;45m"
-            else
+            else:
                 print "\033[31;46"
+    print "\n"
 
 #with open('sadface.txt') as f:
 #    for line in f:
