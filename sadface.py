@@ -1,18 +1,10 @@
-#import RPIO.GPIO as GPIO
-
-#sadface = open('sadface.txt','r')
 
 with open('sadface.txt') as f:
-    for line in f:
-        for ch in line:
-            if ch == "b":
-                print "\033[31;47m"
-            elif ch== ":":
-                print "\033[31;45m"
-            else:
-                print "\033[31;46"
-    print "\n"
-
-#with open('sadface.txt') as f:
-#    for line in f:
-#        print line
+  while True:
+    line = f.readline()
+    if not line:
+      print "End of file"
+      break
+    newline = line.replace("b","\033[31;47m")
+    newline = newline.replace(":","\033[31;45m")
+    print newline
