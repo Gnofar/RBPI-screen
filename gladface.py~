@@ -1,5 +1,5 @@
 from __future__ import print_function
-import os
+from os
 
 with open('gladface.txt') as f:
   os.system('clear'),
